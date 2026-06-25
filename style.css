@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d; 
+    overflow: hidden;
+font-family: 'Orbitron', sans-serif;
+}
+
+.clock-container {
+    position: relative;
+    width: 100vw;          
+    height: 100vh;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.digital-clock {
+    position: absolute;
+    top: 40%;    
+    left: 49%;          
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    /* font-size: 10px;   */
+    font-size: clamp(32px, 6vw, 80px);
+    color: #e6ffff;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 219, 222, 0.6), 
+                 0 0 20px rgba(0, 219, 222, 0.4), 
+                 0 0 30px rgba(252, 0, 255, 0.2);
+}
+
+
+
+.date-display {
+    font-size: 22px;
+    font-weight: 400;
+    color: #e0e0e0;
+    letter-spacing: 0.1vw;
+    margin-bottom: 1.5vw;
+}
+
+
+.footer-credit {
+        font-size: 18px;
+    font-weight: 400;
+    color: #aaaaaa;
+    letter-spacing: 0.1vw;
+}
+
+.my-name {
+    color: #ff2a85;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(255, 42, 133, 0.5);
+}
+
+@media (max-width: 500px) {
+    .digital-clock {
+        
+        top: 44%;  
+        left: 50%; 
+        width: 90%; 
+        font-size: 34px; 
+    }
+}
+
+
+@media (max-width: 449px) {
+    .digital-clock {
+        font-size: 45px; 
+    }
+
+}
+
+
+@media (max-width: 205px){
+     .digital-clock {
+        font-size: 34px; 
+    }
+}
+
+@media (max-width: 307px){
+    .date-display{
+    font-size: 18px;
+    }
+}
+
+
