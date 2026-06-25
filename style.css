@@ -66,34 +66,48 @@ font-family: 'Orbitron', sans-serif;
     text-shadow: 0 0 5px rgba(255, 42, 133, 0.5);
 }
 
+.time{
+    font-size: 100px;
+}
+
 @media (max-width: 500px) {
     .digital-clock {
         
         top: 44%;  
         left: 50%; 
         width: 90%; 
-        font-size: 34px; 
     }
+
+
 }
 
 
 @media (max-width: 449px) {
-    .digital-clock {
-        font-size: 45px; 
-    }
-
+.time{
+     font-size: 60px;
+}
 }
 
 
 @media (max-width: 205px){
-     .digital-clock {
-        font-size: 34px; 
-    }
+
+    .time{
+     font-size: 40px;
 }
 
+
+}
+@media (max-width: 255px){
+    .time{
+     font-size: 28px;
+}
+}
 @media (max-width: 307px){
     .date-display{
-    font-size: 18px;
+    font-size: 15px;
+    }
+    .clock-heading{
+        font-size: 10px;
     }
 }
 
