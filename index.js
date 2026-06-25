@@ -8,10 +8,6 @@ let minutes = String(currentMinutes).padStart(2, '0');
 let currentseconds = date.getSeconds();
 let seconds = String(currentseconds).padStart(2, '0')
 
-console.log(hours);
-console.log(seconds);
-console.log(minutes);
-
 
 
 let hour = document.getElementById("time");
